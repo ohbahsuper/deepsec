@@ -11,8 +11,10 @@
 
 DeepSec est un outil Python compact d’observation de surface d’exposition et d’audit défensif. Il analyse uniquement des réponses publiques, sans exploiter les vulnérabilités ni modifier les données.
 
-> [!DANGER]
-> **Autorisation obligatoire** — DeepSec est destiné uniquement aux systèmes, domaines et applications que vous possédez ou pour lesquels vous disposez d’une autorisation explicite.
+> [!CAUTION]
+> **Autorisation obligatoire**
+>
+> DeepSec doit être utilisé uniquement sur des systèmes, domaines et applications que vous possédez ou pour lesquels vous disposez d’une autorisation explicite.
 
 ## Fonctionnalités
 
