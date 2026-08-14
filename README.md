@@ -52,6 +52,9 @@ python deepsec.py https://example.com
 
 ## Si vous avez perdu le dossier
 
+> [!NOTE]
+> Étant donné que la recherche s'effectue dans tout l'ordinateur, les commandes peuvent prendre un peu de temps.
+
 ### Windows PowerShell
 
 Recherche dans tout le disque `C:` puis ouvre automatiquement le premier dossier `deepsec` trouvé :
