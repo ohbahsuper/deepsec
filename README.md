@@ -32,15 +32,40 @@ DeepSec est un outil Python compact d’observation de surface d’exposition et
 git clone https://github.com/ohbahsuper/deepsec.git
 cd deepsec
 python -m venv .venv
+```
 
-# Linux/macOS
+### Linux / macOS
+
+```bash
 source .venv/bin/activate
-
-# Windows PowerShell
-.venv\Scripts\Activate.ps1
-
 pip install -r requirements.txt
 python deepsec.py https://example.com
+```
+
+### Windows PowerShell
+
+```powershell
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python deepsec.py https://example.com
+```
+
+## Si vous avez perdu le dossier
+
+### Windows PowerShell
+
+Recherche dans tout le disque `C:` puis ouvre automatiquement le premier dossier `deepsec` trouvé :
+
+```powershell
+cd (Get-ChildItem C:\ -Directory -Recurse -Filter "deepsec" -ErrorAction SilentlyContinue | Select-Object -First 1).FullName
+```
+
+### Linux / macOS
+
+Recherche dans votre dossier personnel puis ouvre automatiquement le premier dossier `deepsec` trouvé :
+
+```bash
+cd "$(find ~ -type d -name 'deepsec' -print -quit 2>/dev/null)"
 ```
 
 Python 3.12 ou supérieur est requis. L’outil fonctionne sous Linux et Windows.
